@@ -1,0 +1,356 @@
+/* character encoding (optional) */
+@charset 'utf-8';
+
+/* general settings */
+
+* {
+  margin: 0;
+  padding-top: 0%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%; /* prevent font scaling in landscape orientation on iOS devices */
+  scroll-behavior: smooth; /* not supported in all browsers but doesn't affect functionality */
+}
+
+/* CSS variable */
+
+:root { /* accesible to all rule sets */
+  --accent-color: rgb(1,227,191);
+}
+
+#container {
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  margin: 20px;
+}
+img {
+  flex: 0 0 auto;
+  width: 60%;
+  height: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+/* text */
+
+@font-face {
+  font-family: Raleway;
+  src:
+    url('fonts/Raleway-Medium.ttf'),
+    
+}
+
+@font-face {
+  font-family: plastique;
+  src: url('fonts/PLASTIQUE.ttf');
+}
+
+
+
+#wall{
+
+  opacity:  0;
+
+}
+
+#demos{
+ 
+ border-color: #7c7c7c;
+ border-radius: 10px;
+color: rgb(1,227,191);
+
+  font-family: 'Syncopate', sans-serif;
+
+  font-style: normal;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+  text-decoration: none;
+  
+  cursor: pointer;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,1),0px 1px 3px rgba(0,0,0,0.3);
+  outline: none;
+  border: 1px solid lightgrey;
+ 
+  background: linear-gradient(top, rgba(0, 128, 219, 0.5), #e6e6e6 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, rgba(0, 128, 219, 0.5));
+  background: -webkit-linear-gradient(top, rgba(0, 128, 219, 0.5), #e6e6e6 25%, #ffffff 38%, rgba(0, 0, 0, 0.25)  63%, #e6e6e6 87%, rgba(0, 128, 219, 0.5));
+}
+
+#WebAR{
+  
+  border-color: #7c7c7c;
+ border-radius: 10px;
+color: rgb(1,227,191);
+
+  font-family: 'Syncopate', sans-serif;
+
+  font-style: normal;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    text-decoration: none;
+  
+  cursor: pointer;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,1),0px 1px 3px rgba(0,0,0,0.3);
+  outline: none;
+  border: 1px solid lightgrey;
+  background: linear-gradient(top, rgba(0, 128, 219, 0.5), #e6e6e6 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, rgba(0, 128, 219, 0.5));
+  background: -webkit-linear-gradient(top, rgba(0, 128, 219, 0.5), #e6e6e6 25%, #ffffff 38%, rgba(0, 0, 0, 0.25)  63%, #e6e6e6 87%, rgba(0, 128, 219, 0.5));
+}
+
+#simulation{
+
+  border-color: #7c7c7c;
+ border-radius: 10px;
+ color: rgb(1,227,191);
+
+  font-family: 'Syncopate', sans-serif;
+
+  font-style: normal;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    text-decoration: none;
+  
+  cursor: pointer;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,1),0px 1px 3px rgba(0,0,0,0.3);
+  outline: none;
+  border: 1px solid lightgrey;
+  background: linear-gradient(top, rgba(0, 128, 219, 0.5), #e6e6e6 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, rgba(0, 128, 219, 0.5));
+  background: -webkit-linear-gradient(top, rgba(0, 128, 219, 0.5), #e6e6e6 25%, #ffffff 38%, rgba(0, 0, 0, 0.25)  63%, #e6e6e6 87%, rgba(0, 128, 219, 0.5));
+}
+
+
+  #heading{
+font-family: Syncopate, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.3em;
+  line-height: 1.7em;
+
+  }
+
+  h2, nav {
+  
+  font-size: 0.9em;
+  line-height: 1.9em;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin-top: 0.5em;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+a:hover, nav > a:hover {
+  color: gray;
+}
+
+a:active, nav > a:active {
+  color: lightgray;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+h1 > a:link, h1 > a:visited {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+nav > a:link, nav > a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* header and navigation */
+
+header {
+  /*background-color: rgb(4,217,255); /* dark gray */
+/*background: rgb(57,132,207);
+background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+*/
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* layout */
+
+header, article {
+  padding: 1em;
+}
+
+figure {
+  max-height: 85vh; /* percentage of viewport height */
+  overflow: hidden;
+  display: flex; /* in this case, for alignment */
+  align-items: center; /* center child element (banner image) vertically */
+}
+
+img {
+  flex: 0 0 auto;
+  width: 55%;
+  height: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+img.banner {
+
+  width: 100%;
+  height: auto;
+}
+
+img.alt_banner {
+  display: none;
+  
+}
+
+footer {
+  border-top: 1px solid var(--accent-color);
+  padding: 1em;
+  margin-top: 5em;
+}
+
+/* media queries */
+
+@media (min-width: 45em) {
+
+  header {
+    
+    height: 2.5em;
+   /* position: sticky;*/ /* preferable to "fixed" as it preserves initial space */
+    top: 0;
+  }
+
+  nav {
+    flex-direction: row;
+
+  justify-content: space-around;
+
+  }
+
+  nav > a {
+    margin-left: 1em;
+  }
+
+  article {
+    /* newer, simpler, but not fully supported (Safari) */
+    /* scroll-margin-top: 4.5em; */
+
+    padding-top: 5.5em; /* extra 1em for to account for padding */
+    margin-top: -4.5em;
+  }
+
+    img.banner {
+  display: none;
+  
+  
+}
+
+img.alt_banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  
+}
+
+img {
+  flex: 0 0 auto;
+  width: 25%;
+  height: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+}
+
+@media (min-width: 70em) {
+
+  article {
+    display: flex;
+     flex-flow: column wrap;
+  }
+
+  article > h2 {
+    width: 80%;
+  }
+
+  article > p {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  img.banner {
+  display: none;
+  
+  
+}
+
+img.alt_banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  
+}
+
+img {
+  flex: 0 0 auto;
+  width: 20%;
+  height: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+
+}
+
+
+
+@media (min-width: 120em) {
+
+  p {
+    font-size: 1.0em;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  article > h2 {
+    width: 90%;
+  }
+
+  article > p {
+    width: 90%;
+  }
+  img.banner {
+  display: none;
+  
+  
+}
+
+img.alt_banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  
+}
+
+img {
+  flex: 0 0 auto;
+  width: 20%;
+  height: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+}
+
