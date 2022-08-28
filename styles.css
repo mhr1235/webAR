@@ -202,13 +202,13 @@ img {
   max-width: 100%;
   margin-right: 10px;
 }
-img.banner {
+video.banner {
 
   width: 100%;
   height: auto;
 }
 
-img.alt_banner {
+video.alt_banner {
   display: none;
   
 }
@@ -249,13 +249,13 @@ footer {
     margin-top: -4.5em;
   }
 
-    img.banner {
+    video.banner {
   display: none;
   
   
 }
 
-img.alt_banner {
+video.alt_banner {
   display: flex;
   width: 100%;
   height: auto;
@@ -288,13 +288,13 @@ img {
     margin-left: 10%;
   }
 
-  img.banner {
+  video.banner {
   display: none;
   
   
 }
 
-img.alt_banner {
+video.alt_banner {
   display: flex;
   width: 100%;
   height: auto;
@@ -332,13 +332,13 @@ img {
   article > p {
     width: 90%;
   }
-  img.banner {
+  video.banner {
   display: none;
   
   
 }
 
-img.alt_banner {
+video.alt_banner {
   display: flex;
   width: 100%;
   height: auto;
